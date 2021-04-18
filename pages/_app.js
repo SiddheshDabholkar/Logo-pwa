@@ -1,7 +1,10 @@
-import 'antd/dist/antd.css'
-import '../styles/vars.css'
-import '../styles/global.css'
+import "antd/dist/antd.css";
+import Layout from "../Layout/Layout";
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
