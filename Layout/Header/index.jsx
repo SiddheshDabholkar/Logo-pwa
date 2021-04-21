@@ -10,11 +10,12 @@ const { Header } = Layout;
 const StyledHeader = styled(Header)`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   color: #000;
-  background-color: rgb(94, 161, 255);
+  /* background-color: rgb(94, 161, 255); */
+  background-color: #fff;
   a {
     text-decoration: none;
     padding: 4px;
@@ -26,7 +27,7 @@ const RightContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 75%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -34,7 +35,7 @@ const LeftContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 25%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 

@@ -9,7 +9,8 @@ const StyledFooter = styled(Footer)`
   flex: 1;
   align-items: center;
   padding: 20px;
-  background-color: rgb(94, 161, 255);
+  /* background-color: rgb(94, 161, 255); */
+  background-color: #fff;
   color: #000;
   height: auto;
 `;
