@@ -1,9 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { MainContainer } from "../Container/MainContainer";
 import { SPageHeader, SPageParagraph } from "../Components/Text";
-import { UsbOutlined } from "@ant-design/icons";
 import Head from "next/head";
-import styled from "styled-components";
 import { SvgContainer } from "../Container/SvgContainer";
 import lottie from "lottie-web";
 import svg from "../public/svg/43629-analytics.json";
