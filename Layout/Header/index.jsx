@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import Link from "next/link";
 import { Layout, Menu, Drawer, Button } from "antd";
-import { MenuUnfoldOutlined } from "@ant-design/icons";
+import { MenuUnfoldOutlined, UsbOutlined } from "@ant-design/icons";
 import { SCompanyName } from "../../Components/Text";
 
 const { Header } = Layout;
@@ -65,6 +65,7 @@ export default function SHeader() {
             type="text"
             onClick={showDrawer}
           ></Button>
+          <UsbOutlined />
           <SCompanyName>Logo</SCompanyName>
         </LeftContainer>
         <RightContainer>
@@ -84,7 +85,7 @@ export default function SHeader() {
       </StyledHeader>
 
       <Drawer
-        title="Logo"
+        title="Logo "
         placement="left"
         closable={false}
         onClose={onClose}

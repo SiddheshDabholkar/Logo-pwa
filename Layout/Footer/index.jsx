@@ -12,6 +12,7 @@ import {
   MediumOutlined,
   InstagramOutlined,
   GithubOutlined,
+  UsbOutlined,
 } from "@ant-design/icons";
 import { SCompanyName, SParagraph } from "../../Components/Text";
 
@@ -29,6 +30,7 @@ const StyledFooter = styled(Footer)`
 const Above = styled.div`
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 `;
@@ -62,11 +64,6 @@ export default function SFooter() {
   return (
     <>
       <StyledFooter>
-        <Above>
-          <SCompanyName ifinfooter bolder>
-            logo
-          </SCompanyName>
-        </Above>
         <HorizontalLine />
         <Below>
           <SocialContainer>
@@ -91,6 +88,7 @@ export default function SFooter() {
           </SocialContainer>
         </Below>
         <Below>
+          <UsbOutlined />
           <SParagraph>Copyright © {new Date().getFullYear()} logo</SParagraph>
         </Below>
         <BackTop>
