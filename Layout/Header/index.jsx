@@ -3,10 +3,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Layout, Menu, Drawer, Button } from "antd";
 import { MenuUnfoldOutlined } from "@ant-design/icons";
+import { SCompanyName } from "../../Components/Text";
 
 const { Header } = Layout;
 
 const StyledHeader = styled(Header)`
+  backdrop-filter: blur(8px);
+  background-color: rgba(178, 60, 253, 0);
+  position: fixed;
+  z-index: 1;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +20,6 @@ const StyledHeader = styled(Header)`
   width: 100%;
   padding: 15px;
   color: #000;
-  background-color: #fff;
   a {
     text-decoration: none;
     padding: 4px;
@@ -60,7 +65,7 @@ export default function SHeader() {
             type="text"
             onClick={showDrawer}
           ></Button>
-          <span style={{ padding: "10px" }}>Logo</span>
+          <SCompanyName>Logo</SCompanyName>
         </LeftContainer>
         <RightContainer>
           <Link href="/">
@@ -75,8 +80,8 @@ export default function SHeader() {
           <Link href="/Documentation">
             <a>Documentation</a>
           </Link>
-          <Link href="/Signin">
-            <a>Signin</a>
+          <Link href="/Login">
+            <a>Login</a>
           </Link>
           <Link href="/Signup">
             <a>Signup</a>
@@ -85,7 +90,7 @@ export default function SHeader() {
       </StyledHeader>
 
       <Drawer
-        title="Basic Drawer"
+        title="Logo"
         placement="left"
         closable={false}
         onClose={onClose}
@@ -113,8 +118,8 @@ export default function SHeader() {
             </Link>
           </Menu.Item>
           <Menu.Item key="5">
-            <Link href="/Signin">
-              <a onClick={() => setState(false)}>Signin</a>
+            <Link href="/Login">
+              <a onClick={() => setState(false)}>Login</a>
             </Link>
           </Menu.Item>
           <Menu.Item key="6">

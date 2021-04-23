@@ -1,7 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
+import { BackTop } from "antd";
 import { Layout } from "antd";
 const { Footer } = Layout;
+import {
+  UpCircleOutlined,
+  FacebookOutlined,
+  TwitterOutlined,
+  LinkedinOutlined,
+  MediumOutlined,
+  InstagramOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
+import { SCompanyName, SParagraph } from "../../Components/Text";
 
 const StyledFooter = styled(Footer)`
   display: flex;
@@ -9,17 +21,81 @@ const StyledFooter = styled(Footer)`
   flex: 1;
   align-items: center;
   padding: 20px;
-  /* background-color: rgb(94, 161, 255); */
-  background-color: #fff;
   color: #000;
   height: auto;
+  background-color: #fff;
+`;
+
+const Above = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+const Below = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+`;
+
+const SocialContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  padding: 10px;
+  @media (max-width: 500px) {
+    width: 60%;
+  }
+`;
+
+const HorizontalLine = styled.hr`
+  border: 1px solid #0000003d;
+  width: 80%;
 `;
 
 export default function SFooter() {
   return (
     <>
       <StyledFooter>
-        <h1>lol</h1>
+        <Above>
+          <SCompanyName ifinfooter bolder>
+            logo
+          </SCompanyName>
+        </Above>
+        <HorizontalLine />
+        <Below>
+          <SocialContainer>
+            <Link href="https://www.facebook.com">
+              <FacebookOutlined />
+            </Link>
+            <Link href="https://www.twitter.com">
+              <TwitterOutlined />
+            </Link>
+            <Link href="https://www.Linkedin.com">
+              <LinkedinOutlined />
+            </Link>
+            <Link href="https://www.Medium.com">
+              <MediumOutlined />
+            </Link>
+            <Link href="https://www.Instagram.com">
+              <InstagramOutlined />
+            </Link>
+            <Link href="https://www.github.com">
+              <GithubOutlined />
+            </Link>
+          </SocialContainer>
+        </Below>
+        <Below>
+          <SParagraph>Copyright © {new Date().getFullYear()} logo</SParagraph>
+        </Below>
+        <BackTop>
+          <UpCircleOutlined style={{ fontSize: "30px" }} />
+        </BackTop>
       </StyledFooter>
     </>
   );
