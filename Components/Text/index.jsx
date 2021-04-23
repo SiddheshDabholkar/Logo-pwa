@@ -5,6 +5,16 @@ export const SPageHeader = styled.h1`
   font-size: 28px;
   font-weight: bolder;
   text-align: center;
+  width: 100%;
+`;
+
+export const SPageParagraph = styled.p`
+  color: ${({ light }) => (light ? "#fff" : "#000")};
+  font-size: 17px;
+  font-weight: ${({ bolder }) => (bolder ? "bolder" : "")};
+  text-align: center;
+  width: 100%;
+  font-family: cursive;
 `;
 
 export const SParagraph = styled.p`

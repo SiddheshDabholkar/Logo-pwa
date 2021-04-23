@@ -77,14 +77,8 @@ export default function SHeader() {
           <Link href="/Features">
             <a>Features</a>
           </Link>
-          <Link href="/Documentation">
-            <a>Documentation</a>
-          </Link>
-          <Link href="/Login">
-            <a>Login</a>
-          </Link>
-          <Link href="/Signup">
-            <a>Signup</a>
+          <Link href="/ContactUs">
+            <a>ContactUs</a>
           </Link>
         </RightContainer>
       </StyledHeader>
@@ -113,18 +107,8 @@ export default function SHeader() {
             </Link>
           </Menu.Item>
           <Menu.Item key="4">
-            <Link href="/Documentation">
-              <a onClick={() => setState(false)}>Documentation</a>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="5">
-            <Link href="/Login">
-              <a onClick={() => setState(false)}>Login</a>
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="6">
-            <Link href="/Signup">
-              <a onClick={() => setState(false)}>Signup</a>
+            <Link href="/ContactUs">
+              <a onClick={() => setState(false)}>ContactUs</a>
             </Link>
           </Menu.Item>
         </Menu>

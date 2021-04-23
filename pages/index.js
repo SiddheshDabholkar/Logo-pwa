@@ -10,34 +10,7 @@ export default function Home() {
         <meta name="keywords" content="Home" />
       </Head>
       <MainContainer>
-        <SPageHeader>Home</SPageHeader>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
+        <SPageHeader>Logo</SPageHeader>
         <h1>lol</h1>
         <h1>lol</h1>
         <h1>lol</h1>

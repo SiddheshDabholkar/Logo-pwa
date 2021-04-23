@@ -6,9 +6,8 @@ export const MainContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: ${({ full }) => (full ? "550px" : "auto")};
   padding-top: 65px;
-
   background-color: #8ec5fc;
   background-image: linear-gradient(
     180deg,
